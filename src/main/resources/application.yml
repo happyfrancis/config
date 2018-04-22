@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/happyfrancis/config-repo
+          username: 15527804816@163.com
+          password: cisyunhua123
+          basedir: E:\localhost\config
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+rabbitmq:
+   host: 127.0.0.1
+   port: 15672
+   username: guest
+   password: guest
