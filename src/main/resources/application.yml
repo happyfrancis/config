@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/happyfrancis/config-repo
+          uri: https://gitee.com/francis-chen/config-repo.git
           username: 15527804816@163.com
           password: cisyunhua123
           basedir: E:\localhost\config
@@ -13,13 +13,11 @@ eureka:
   client:
     service-url:
        defaultZone: http://localhost:8761/eureka/
+# 将项目部署到rancher上 设置服务之间可以访问
+  instance:
+    prefer-ip-address: true
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-rabbitmq:
-   host: 127.0.0.1
-   port: 15672
-   username: guest
-   password: guest
