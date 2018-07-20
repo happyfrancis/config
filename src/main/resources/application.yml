@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://gitee.com/francis-chen/config-repo.git
           username: 15527804816@163.com
-          password: cisyunhua123
+          password: cisyunhua98
           basedir: E:\localhost\config
 eureka:
   client:
